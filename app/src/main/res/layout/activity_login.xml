@@ -7,6 +7,15 @@
     android:background="#b33224"
     tools:context=".Login">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <include layout="@layout/toolbar"/>
+
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -28,7 +37,7 @@
             android:layout_marginTop="160dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/edittextdesign"
-            android:hint="Email"
+            android:hint="Username"
             android:paddingStart="20dp"
             android:paddingEnd="20dp" />
 
@@ -46,6 +55,7 @@
             android:paddingEnd="20dp" />
 
         <Button
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/edt_password"
@@ -58,4 +68,5 @@
             android:textAllCaps="false"
             android:layout_marginBottom="10dp"/>
     </RelativeLayout>
+    </LinearLayout>
 </ScrollView>
